@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout code'){
             steps{
-                git branch: 'master', url: 'https://github.com/rat9615/simple-nodejs-app.git'
+                checkout scm
             }
         }
         stage('Install Dependencies') {
